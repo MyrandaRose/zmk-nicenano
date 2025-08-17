@@ -10,9 +10,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 You can override  it within your e.g. keymap like:
 
-&nice_view_spi {
-     cs-gpios = <&gpio0 22 GPIO_ACTIVE_HIGH>;  // P0.22 here, you can use &pro_micro x for Dx
- };
 
 / {
     keymap {
@@ -71,5 +68,9 @@ You can override  it within your e.g. keymap like:
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
+&nice_view_spi {
+     cs-gpios = <&gpio0 22 GPIO_ACTIVE_HIGH>;  // P0.22 here, you can use &pro_micro x for Dx
+ };
+
     };
 };
