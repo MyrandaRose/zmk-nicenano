@@ -10,7 +10,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 You can override  it within your e.g. keymap like:
 
-dts
 &nice_view_spi {
      cs-gpios = <&gpio0 22 GPIO_ACTIVE_HIGH>;  // P0.22 here, you can use &pro_micro x for Dx
  };
